@@ -1,0 +1,70 @@
+%header-right {
+	@media only screen and (min-width: $bp__tablet) {
+		float 			: right !important;
+		width 			: 50%;
+		display 		: block;
+		padding-right 	: 1.5em;
+		text-align 		: right !important;
+	}
+}
+
+%inline {
+	display 		: inline-block;
+	vertical-align 	: top;
+}
+
+%hidetext {
+	text-indent	: 100%;
+	overflow	: hidden;
+	white-space	: nowrap;
+	font-size 	: 0;
+}
+
+%listreset {
+	list-style 	: none;
+	margin 		: 0;
+	padding 	: 0;
+}
+
+%menutoggle {
+	display 		: block;
+	width			: 100%;
+	border			: none;
+	line-height		: 1.25em;
+	font-size		: 1.25em;
+	box-shadow		: none;
+	border-radius	: 0;
+	text-shadow		: none;
+	outline 		: 0;
+	color 			: $light;
+
+	&:hover,
+	&:focus,
+	&:active {
+		border		: none;
+		box-shadow	: none;
+		border-color: inherit;
+	}
+
+	@media only screen and (min-width: $bp__menu-button+1) {
+		z-index : 9999;
+	}
+}
+
+%vertcenter {
+	position 	: relative;
+	top 		: 50%;
+	transform 	: translateY(-50%);
+}
+
+
+%lists {
+	ul, ol {
+		margin-left 	: 1.5em;
+		letter-spacing 	: 1px;
+
+		li {
+			padding: 0.25em;
+		}
+	}
+}

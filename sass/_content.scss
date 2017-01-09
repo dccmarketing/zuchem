@@ -1,0 +1,143 @@
+div.zu_content {
+	position 		: relative;
+	margin 			: 0 auto;
+	background 		: none;
+	color 			: $med;
+	font-family 	: myriad-pro,sans-serif;
+
+	@media only screen and (min-width: $bp__tablet) {
+		border-top 	: 1px solid $lightturq;
+		padding-top : 0.5em;
+	}
+
+	a {
+		text-decoration : none;
+		color 			: $aqua;
+
+		&:hover {
+			color 		: $med;
+		}
+	}
+
+	h1, h2, h3, h4 {
+		font-family : galette,sans-serif;
+		color 		: $med;
+	}
+
+	h1 {
+		font-size 		: 1.75em;
+		color 			: $aqua;
+		padding-bottom 	: 12px;
+	}
+
+	h2 {
+		font-size 		: 1.5em;
+		color 			: $aqua;
+		padding-bottom 	: 12px;
+	}
+
+	h3 {
+		font-size 		: 1.25em;
+	}
+
+	h4 {
+		font-size 		: 1.125em;
+	}
+
+	p {
+		margin-top 		: 12px;
+		letter-spacing 	: 1px;
+		line-height 	: 1.2;
+		margin-bottom 	: 12px;
+	}
+}
+
+
+// Home
+.zu-index-content {
+
+	@media only screen and (min-width: $bp__tablet) {
+		border-top 	: 1px solid $lightturq;
+		margin-top 	: 0.33em;
+		padding-top : 0.5em;
+		float 		: left;
+	}
+
+	@extend %lists;
+}
+
+div.zu_index_left {
+	padding 		: 1em;
+
+	@media only screen and (min-width: $bp__tablet) {
+		border-right 	: 2px dotted $gray;
+		float 			: left;
+		width 			: 60%;
+		max-width 		: 600px;
+	}
+
+	p {
+		font-size 		: 18px;
+		letter-spacing	: 1px;
+	}
+}
+
+div.zu_index_right {
+	padding 		: 1em;
+
+	@media only screen and (min-width: $bp__tablet) {
+		float 		: right;
+		width 		: 40%;
+		max-width 	: 400px;
+	}
+
+	p {
+		font-style 		: italic;
+		font-weight 	: bold;
+		letter-spacing 	: normal;
+	}
+}
+
+div.zu_index_right_item {
+	position 		: relative;
+	display 		: block;
+}
+
+div.zu_index_img {
+
+	@media only screen and (min-width: $bp__tablet) {
+		float 		: right;
+		width 		: 75%;
+		max-width 	: 750px;
+	}
+}
+
+
+// Subpages
+div.zu_sub_pg_content {
+	padding 		: 1em;
+
+	@media only screen and (min-width: $bp__tablet) {
+		float 		: right;
+		width 		: 75%;
+		max-width 	: 750px;
+	}
+
+	h1, h2, h3, h4 {
+		padding-top : 10px;
+	}
+
+	@extend %lists;
+}
+
+.blog {
+	article {
+		padding 		: 1em 0;
+		border-bottom 	: 1px solid $turq;
+	}
+
+	.entry-title {
+		color 		: $med;
+		font-size 	: 1.25em;
+	}
+}

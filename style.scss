@@ -1,0 +1,20 @@
+/*!
+Theme Name: zuChem
+Theme URI: http://www.zuchem.com
+Description:
+Author: DCC Marketing
+Author URI: http://www.dccmarketing.com
+Version: 1.0
+*/
+
+@import "sass/vars";
+@import "sass/mixins";
+
+@import "sass/normalize";
+@import "sass/base";
+@import "sass/header";
+@import "sass/nav";
+@import "sass/content";
+@import "sass/category";
+@import "sass/footer";
+@import "sass/sidemenu";

@@ -1,0 +1,142 @@
+.zu_footer {
+	margin 			: 0 auto 1.5em;
+	background 		: $lightturq;
+	overflow 		: auto;
+	padding 		: 1em;
+
+	@media only screen and (min-width: $bp__laptop) {
+		background 	: url(images/bg_footer.png) top no-repeat;
+		width 		: 1000px;
+		height 		: 195px;
+	}
+}
+
+.zu_ftr_item {
+	position 		: relative;
+	margin-bottom 	: 1.5em;
+	font-family 	: myriad-pro,sans-serif;
+	font-size 		: 1em;
+	font-weight 	: bold;
+	color 			: $turq;
+	letter-spacing 	: 1px;
+	line-height 	: 1.5;
+
+	@media only screen and (min-width: $bp__menu_button+1) {
+		display 		: inline-block;
+		vertical-align 	: top;
+		margin-left 	: 1.25em;
+		width 			: 46%;
+	}
+
+	@media only screen and (min-width: $bp__laptop) {
+		float: left;
+		font-size 		: 12px;
+		line-height 	: 1;
+	}
+
+	li {
+		list-style 		: none;
+		padding 		: 4px;
+	}
+
+	a {
+		color 			: $turq;
+		text-decoration : none;
+
+		&:hover {
+			color 		: $dark;
+		}
+	}
+
+	h3 {
+		font-size 		: 1em;
+		letter-spacing 	: 1.2px;
+
+		@media only screen and (min-width: $bp__laptop) {
+			font-size 	: 12px;
+			text-align 	: right;
+		}
+	}
+
+	&.main-menu {
+		@media only screen and (min-width: $bp__laptop) {
+			max-width: 	284px;
+		}
+	}
+
+	&.products {
+		@media only screen and (min-width: $bp__laptop) {
+			max-width: 184px;
+		}
+	}
+
+	&.header-menu {
+		@media only screen and (min-width: $bp__laptop) {
+			width: 144px;
+		}
+	}
+
+	&.subscribe {
+		text-align: center;
+
+		@media only screen and (min-width: $bp__menu_button+1) {
+			float: none;
+		}
+
+		@media only screen and (min-width: $bp__laptop) {
+			float 		: right;
+			max-width 	: 295px;
+		}
+
+	}
+
+	.social-icon {
+		max-width 	: 50px;
+		max-height 	: 50px;
+	}
+}
+
+.zu_input {
+	width 			: 84%;
+	height 			: 22px;
+	background 		: url(images/bg_input.jpg) top no-repeat;
+	border 			: none;
+	font-family 	: myriad-pro,sans-serif;
+	color 			: $med;
+	@extend %inline;
+
+	@media only screen and (min-width: $bp__laptop) {
+		font-size 		: 12px;
+	}
+}
+
+.zu_submit {
+	width 			: 13%;
+	height 			: 25px;
+	background 		: url(images/form_button.jpg) top no-repeat;
+	cursor 			: pointer;
+	max-width 		: 38px;
+	@extend %inline;
+}
+
+
+.dcc_link {
+	margin 		: 0 auto;
+	padding 	: 1em;
+	text-align 	: center;
+	font-family : lucida sans;
+	font-size 	: 12px;
+	color 		: $turq;
+
+	a {
+		color: $turq;
+		text-decoration: none;
+
+		&:hover {
+			color: $aqua;
+		}
+	}
+}
+
+
+
